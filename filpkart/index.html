@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container-1">
+    <nav>
+        <div class="class1">
+            <div class="class2">
+                <img src="images/fkheaderlogo_exploreplus-44005d.svg">
+            </div>
+            <div class="class3">
+                <div class="class8">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA3hJREFUSEvlll2IFWUYx//PzNkPBLvwprQsWVo2JQq88CK9CKFCUg777umdjxVrNSVFBImk6MarvMjoA5QCPyrcc+aMzpzWhSW90SuDbjQocHVhRfKDSEJXc9sz8z46s7PmHs85MydQL3pv5//+f8/HvM/7Eh7TosfERSaw67rtAXLLNIVuRfQUEa4weCyH4Gcp5dR/Cb4peNDzntMC2g1gNYDOOoDbDAypHH+wtq/v91YCaAguOt4WIvocQHsGw39A9J4le7/NoI0ldcFOubKbwe8nJgGYvybQCaXU6Ny5HeO3blW7WOMXoLASRJsA6NNa/tgy+j7JAn8A7LiVzcy8NzEaI6Y3TVOca2RWLB55iXRtBMDTMRpk2EavmwafBXYcfzETfgHQxsAowrYVtr3mzzSTQ573jB7QKQALAdyE0nssK3+52b5Z4JLrHwPjdQBTUNRjWb0X0qAz3x3Hf5kJp6P2MfC9bYi3M4Fd150Xcu7adOPpC9Po3Z4VOqMrlv0SASaAGzoF86SUYSOPexmXXK8ApsNxnwiv2FL81CrYcfy3mBD3N83jX3DZ3wbgy2jTnE79iXw+P9EquFSqLILG49M/Gd6xDfFdasbFcuUjAsdHQacg16xMjcxGRkY6rk9MTsbtIuwwpfg0Fey4lU3M/E0Cni+lvNp6xkMLoIWXYjBDmqaIW1dv3St10fVfI8bxpD+rbCl+bBVcLP+whqCOxh6hetG2C7+lgoeHh+fc/Lv6VzQiCdhnGmJj62D/EAH9EVenoLPZBVJ7jj0wBAClk75EyvxoVnhyjs/Eeub9ltn3bqZzHIkGPa9LCygqTyfAY9U2Wr5OiD/S4K7rPhtyLppc0di8poL27v7+1VH1Gq4HZnXJrWwA877pHXSR9fANu1A428jBcbylTBTN6icTzR7LEFvTgq17OxUdfxcRPkw2BwD2gvikDn0UmBqvoq1Hg1oCplcBRCWt9dlgGeJASxnPiJNb6isAubToAVQBDAEo3KdtCk97gXTpAT5j0CoAHXUCCAk4qFGwU0p5qVT219+9ofZngWd6c8UT6frUMiL1fPTmAnCBVHh+cnLi14GBgXhSzaxaODHWm6Y4WBt0JnCGUs+SJPDoB438FTHWmaYYvF/0UMARoAa+1TLEnkcCTuAbmdFtm2LHIyl1ltY8tFKnwf9/4DushlAuY8O3bAAAAABJRU5ErkJggg=="/>
+                    <!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAoZJREFUSEvllknIjlEUx39fxiwsbAyfKZEhURbfAgspJGxkKoVMoS8lEdlYsUCGIsocKbJgIWxYUTYoylQkUyKFMg/nr/PoerzPc+/71OtbOLv3fc49v3vPPed/bhNtZE1txCUV3BFoAQYBPYDnwAPgGvC5yuZj4H7AVmAq0LkG4ANwBlgDPKlnA2XgFcB2QKeN2SdgGXA45ph9LwLrlKvd6auldy9wCbgLPAQGAEOA8cBSoJ37brCNbkqB1wIvB/b4Yt3jFOBeSbARdv/ngGb3mQ2cjMHz4KHATaCDn24s8CoWBOgNXAH6AO+BwZaJZ2Xr8uALFmCiV6oWP0qAZi4jgevwq1OO2pXMTwV3A1678w5gVR3QzPUEMAd4Cyjet6IY4YlnAKfccTRwtQJ4ZnC/pTFC8Epgp8O6WlW/qwDu71WvpQuAIyknXh+0QvuyNJVsqBPw0b+vBbakgNWP+9yxpwnCiwon7gU89XWzgqv7K1SY6gnARfeYDJyvAJ4GnPV1w4HbKSfuArxxidxvO19SAXwMmAv8cG0vHCD5Pj4NTAe+W3UOcxFJ5auPb7jzARsai1P7WH7SYKVHk0hyOQZ4mUDu68ol2ZQWaHwqe4VWS6sXmQQq1bLH1s+TTBTulMQY5Vrd3X12m8y2xjZbNJ02W1us88WaThoal4PpJDnVVYzzlObjaPMH6z1x5q8ptQtQT8fsiz8IpH6ZlcJjLxDd+TZA7SVxyJu0+JD9udH7d6FNKBVWFB4DZwEE1ZtroL+5NLXuA7cCpcp883D91ub+sFRwLNX574KpQBVfrTnPKv146NQosBghXFWuav9tjQQLIvVTT2tg/JNUR6+m0Scu3MD/B/4JVp9tH2VWMqoAAAAASUVORK5CYII="/> -->
+                </div>
+                <div class="class9">
+                    <p>Search for Products, Brands and More</p>
+                </div>
+                
+            </div>
+            <div class="class4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0_11829_87876)">
+                      <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M12 15C14.0711 15 15.75 13.3211 15.75 11.25C15.75 9.17893 14.0711 7.5 12 7.5C9.92893 7.5 8.25 9.17893 8.25 11.25C8.25 13.3211 9.92893 15 12 15Z" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M5.98047 18.6904C6.54476 17.5789 7.40581 16.6454 8.46816 15.9933C9.53052 15.3413 10.7527 14.9961 11.9992 14.9961C13.2457 14.9961 14.4679 15.3413 15.5303 15.9933C16.5926 16.6454 17.4537 17.5789 18.018 18.6904" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_11829_87876">
+                        <rect width="24" height="24" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                <p>Login</p>
+                <a href="#"><i class='bx bx-chevron-down'></i></a>
+            </div>
+            <div class="class5">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.25 17.25H6.54545L3.93015 2.86584C3.89873 2.69303 3.80766 2.53673 3.67281 2.42419C3.53796 2.31164 3.36789 2.25 3.19225 2.25H1.5" stroke="#111112" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.5 21C8.53553 21 9.375 20.1605 9.375 19.125C9.375 18.0895 8.53553 17.25 7.5 17.25C6.46447 17.25 5.625 18.0895 5.625 19.125C5.625 20.1605 6.46447 21 7.5 21Z" stroke="#111112" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.25 21C18.2855 21 19.125 20.1605 19.125 19.125C19.125 18.0895 18.2855 17.25 17.25 17.25C16.2145 17.25 15.375 18.0895 15.375 19.125C15.375 20.1605 16.2145 21 17.25 21Z" stroke="#111112" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5.86363 13.5H17.6345C17.9858 13.5 18.3259 13.3767 18.5956 13.1516C18.8653 12.9265 19.0475 12.6139 19.1103 12.2683L20.25 6H4.5" stroke="#111112" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <p>Cart</p>
+            </div>
+            <div class="class6">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.49979 13.0547V19.2729C4.49979 19.4658 4.57881 19.6507 4.71947 19.7871C4.86012 19.9235 5.05088 20.0001 5.24979 20.0001H18.7498C18.9487 20.0001 19.1395 19.9235 19.2801 19.7871C19.4208 19.6507 19.4998 19.4658 19.4998 19.2729V13.0547" stroke="#212121" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5.0625 4H18.9375C19.1002 4.0013 19.2582 4.05324 19.3881 4.14817C19.5181 4.24309 19.6132 4.37599 19.6594 4.52727L21 9.09091H3L4.34062 4.52727C4.38682 4.37599 4.4819 4.24309 4.61187 4.14817C4.74183 4.05324 4.8998 4.0013 5.0625 4V4Z" stroke="#212121" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 9.09082V10.5454C9 11.3169 8.68393 12.0568 8.12132 12.6024C7.55871 13.148 6.79565 13.4545 6 13.4545C5.20435 13.4545 4.44129 13.148 3.87868 12.6024C3.31607 12.0568 3 11.3169 3 10.5454V9.09082" stroke="#212121" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.9999 9.09082V10.5454C14.9999 11.3169 14.6839 12.0568 14.1213 12.6024C13.5586 13.148 12.7956 13.4545 11.9999 13.4545C11.2043 13.4545 10.4412 13.148 9.87861 12.6024C9.316 12.0568 8.99993 11.3169 8.99993 10.5454V9.09082" stroke="#212121" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20.9999 9.09082V10.5454C20.9999 11.3169 20.6838 12.0568 20.1212 12.6024C19.5586 13.148 18.7955 13.4545 17.9999 13.4545C17.2042 13.4545 16.4412 13.148 15.8785 12.6024C15.3159 12.0568 14.9999 11.3169 14.9999 10.5454V9.09082" stroke="#212121" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <p>Become a Seller</p>
+                    
+                    
+            </div>
+            <div class="class7">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.125 12C13.125 12.2225 13.059 12.44 12.9354 12.625C12.8118 12.81 12.6361 12.9542 12.4305 13.0394C12.225 13.1245 11.9988 13.1468 11.7805 13.1034C11.5623 13.06 11.3618 12.9528 11.2045 12.7955C11.0472 12.6382 10.94 12.4377 10.8966 12.2195C10.8532 12.0012 10.8755 11.775 10.9606 11.5695C11.0458 11.3639 11.19 11.1882 11.375 11.0646C11.56 10.941 11.7775 10.875 12 10.875C12.2984 10.875 12.5845 10.9935 12.7955 11.2045C13.0065 11.4155 13.125 11.7016 13.125 12ZM12 6.75C12.2225 6.75 12.44 6.68402 12.625 6.5604C12.81 6.43679 12.9542 6.26109 13.0394 6.05552C13.1245 5.84995 13.1468 5.62375 13.1034 5.40552C13.06 5.1873 12.9528 4.98684 12.7955 4.82951C12.6382 4.67217 12.4377 4.56503 12.2195 4.52162C12.0012 4.47821 11.775 4.50049 11.5695 4.58564C11.3639 4.67078 11.1882 4.81498 11.0646 4.99998C10.941 5.18499 10.875 5.4025 10.875 5.625C10.875 5.92337 10.9935 6.20952 11.2045 6.4205C11.4155 6.63147 11.7016 6.75 12 6.75ZM12 17.25C11.7775 17.25 11.56 17.316 11.375 17.4396C11.19 17.5632 11.0458 17.7389 10.9606 17.9445C10.8755 18.15 10.8532 18.3762 10.8966 18.5945C10.94 18.8127 11.0472 19.0132 11.2045 19.1705C11.3618 19.3278 11.5623 19.435 11.7805 19.4784C11.9988 19.5218 12.225 19.4995 12.4305 19.4144C12.6361 19.3292 12.8118 19.185 12.9354 19C13.059 18.815 13.125 18.5975 13.125 18.375C13.125 18.0766 13.0065 17.7905 12.7955 17.5795C12.5845 17.3685 12.2984 17.25 12 17.25Z" fill="black" fill-opacity="0.87"/>
+                    </svg>
+                    
+            </div>
+
+        </div>
+    </nav>
+
+
+    <section>
+        <div class="class10">
+            <div class="class01">
+                <div class="class11">
+                    <div class="class02">
+                        <img src="images/29327f40e9c4d26b.webp"><br>
+                    </div>
+                    <div class="class03">
+                        <span>Grocery</span>
+                    </div>
+                </div>
+                <div class="class12">
+                    <div class="class04">
+                        <img src="images/22fddf3c7da4c4f4.webp"><br>
+                    </div>
+                    <div class="class05">
+                        <span>Mobiles</span>
+                    </div>
+                </div>
+                <div class="class13">
+                    <div class="class06">
+                        <img src="images/Screenshot 2024-05-25 at 13-47-05 Online Shopping India Mobile Cameras Lifestyle & more Online @ Flipkart.com.png" ><br>
+                    </div>
+                    <div class="class07">
+                        <span>Fashion</span><a href="#"><i class='bx bx-chevron-down'></i></a>
+                    </div>
+                    
+                </div>
+                <div class="class14">
+                    <div class="class08">
+                        <img src="images/Screenshot 2024-05-25 at 13-48-36 Online Shopping India Mobile Cameras Lifestyle & more Online @ Flipkart.com.png" ><br>
+                    </div>
+                    <div class="class09">
+                        <span>Electronics</span><a href="#"><i class='bx bx-chevron-down'></i></a>
+                    </div>
+                </div>
+                <div class="class15">
+                    <div class="class010">
+                        <img src="images/Screenshot 2024-05-25 at 13-50-41 Online Shopping India Mobile Cameras Lifestyle & more Online @ Flipkart.com.png"><br>
+                    </div>
+                     <div class="class011">
+                        <span>Home & Furniture</span><a href="#"><i class='bx bx-chevron-down'></i></a>
+                     </div>
+                </div>
+                <div class="class16">
+                    <div class="class012">
+                        <img src="images/0139228b2f7eb413.webp"><br>
+                    </div>
+                    <div class="class013">
+                        <span>Appliances</span> 
+                    </div>
+                </div>
+                <div class="class17">
+                    <div class="class014">
+                        <img src="images/71050627a56b4693.webp"><br>
+                    </div>
+                   <div class="class015">
+                    <span>Travel</span>
+                   </div>
+                </div>
+                <div class="class18">
+                    <div class="class016">
+                        <img src="images/Screenshot 2024-05-25 at 13-57-35 Online Shopping India Mobile Cameras Lifestyle & more Online @ Flipkart.com.png"><br>
+                    </div>
+                    <div class="class017">
+                        <span>Beauty, Toys & More</span><a href="#"><i class='bx bx-chevron-down'></i></a>
+                    </div>
+                </div>
+                <div class="class19">
+                    <div class="class018">
+                        <img src="images/Screenshot 2024-05-25 at 13-59-06 Online Shopping India Mobile Cameras Lifestyle & more Online @ Flipkart.com.png"><br>
+                    </div>
+                    <div class="class019">
+                        <span>Two Wheelers</span><a href="#"><i class='bx bx-chevron-down'></i></a>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+<section>
+    <div class="clouser"></div>
+</section>
+
+
+
+
+
+
+
+    <section>
+        <div class="class20">
+            <div class="class21">
+                <div class="class23">
+                    <strong>Best of Electronics</strong>
+                    <img src="images/bxs-right-arrow-circle.svg">
+                </div>
+                <div class="class24">
+                    <div class="class25">
+                      <div class="class31"> <img src="images/Untitled.jpg" alt="" ></div>
+                       <div class="class32"><span>Best Truewireless Headph..</span> <strong>Grab Now</strong></div>
+                      
+                    </div>
+                    <div class="class26">
+                        <div class="class33"><img src="images/images.jpg" width="170px" ></div>
+                        <div class="class34"><span>Top Selling Dell Keyboard</span><br><strong>From &#8377;229</strong></div>
+                    </div>
+                    <div class="class27">
+                        <div class="class35"><img src="images/images1.jpg" alt="" width="150px"></div>
+                        <div class="class36"><span>Noise Smartwatches</span><br><strong>From &#8377;1,099</strong></div>
+                    </div>
+                    <div class="class28">
+                        <div class="class37"><img src="images/images2.jpg" alt="" width="170px"></div>
+                        <div class="class38"><span>Projectors</span><br><strong>From &#8377;9999</strong></div>
+                    </div>
+                    <div class="class29">
+                        <div class="class39"><img src="images/images3.jpg" alt="" width="170px"></div>
+                        <div class="class40"><span>Monitor</span><br><strong>From &#8377;8279</strong></div>
+                  
+                    </div>
+                    <div class="class30">
+                        <div class="class41"><img src="images/Untitled1.jpg" alt="" width="170px"></div>
+                        <div class="class42"><span>Best Selling Mobile Spe...</span><br><strong>From &#8377;499*</strong></div>
+                  
+                    </div>
+                </div>
+            </div>
+            <div class="class22">
+                <img src="images/32e8514665f65267.webp" width="300px" height="400px">
+            </div>
+
+        </div>  
+        
+    </section>
+
+
+
+    <section>
+        <div class="class43">
+            <div class="class44">
+                <div class="class45">
+                    <strong>Beauty, Food, Toys & more</strong>
+                    <img src="images/bxs-right-arrow-circle.svg">
+                </div>
+                <div class="class46">
+                    <div class="class47">
+                      <div class="class48"> <img src="images/images (1).jpg" alt="" width="150px" height="200px" ></div>
+                       <div class="class49"><span>String Instruments</span> <br><strong>Up to 70% off</strong></div>
+                      
+                    </div>
+                    <div class="class50">
+                        <div class="class51"><img src="images/download2.jpg" width="170px" ></div>
+                        <div class="class52"><span>Geared Cycles</span><br><strong>Up to 70% off</strong></div>
+                    </div>
+                    <div class="class53">
+                        <div class="class54"><img src="images/download3.jpg" alt="" width="150px"></div>
+                        <div class="class55"><span>Soft Toys</span><br><strong>Up to 75% off</strong></div>
+                    </div>
+                    <div class="class56">
+                        <div class="class57"><img src="images/download2.jpg" alt="" width="170px"></div>
+                        <div class="class58"><span>Electric Cycle</span><br><strong>Up to 80% off</strong></div>
+                    </div>
+                    <div class="class59">
+                        <div class="class60"><img src="images/download4.jpg" alt="" width="170px"></div>
+                        <div class="class61"><span>Coffee Powder</span><br><strong>Up to 70% off</strong></div>
+                  
+                    </div>
+                    <div class="class62">
+                        <div class="class63"><img src="images/images (3).jpg" alt="" width="170px"></div>
+                        <div class="class64"><span>Food Spreads</span><br><strong>Up to 70% off</strong></div>
+                  
+                    </div>
+                    <div class="class65">
+                        <div class="class66"><img src="images/download.jpg" alt="" width="170px"></div>
+                        <div class="class67"><span>Yoga Mat</span><br><strong>Up to 70% off</strong></div>
+                  
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="class22">
+                <img src="images/32e8514665f65267.webp" width="300px" height="400px">
+            </div> -->
+
+        </div>  
+        
+    </section>
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
